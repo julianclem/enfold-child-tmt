@@ -1,0 +1,251 @@
+/*
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating will be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+
+
+/*Add your own styles here:*/
+
+:root {
+    /* primitives */
+    --white: #ffffff;
+
+    --ghost-50: #faf8fa;
+    --ghost-200: #ebe8ec;
+    --ghost-300: #dad6dc;
+    --ghost-400: #cec8d0;
+    --ghost-600: #988c9b;
+
+    --studio-950: #390e44;
+
+    --maroon-700: #8e0b6b;
+
+    --teal-800: #0c575a;
+
+    --teal-desat-600: #8dacad;
+
+    --semantic-error: #9e2800;
+    --semantic-error-bg: #fff8f5;
+    --semantic-success: #265f2b;
+    --semantic-success-bg: #f1f9f1;
+
+    --tiktok-pink: rgb(254, 44, 85);
+
+    /* mappings */
+    --title-bar-bg: var(--studio-950);
+}
+
+#top #wrap_all .av-social-link-tiktok:hover a {
+    color: var(--white);
+    background-color: var(--tiktok-pink);
+}
+
+#main .main_color a,
+#main .main_color a:link,
+#main .main_color a:visited,
+#main .main_color a:hover,
+#main .alternate_color a,
+#main .alternate_color a:link,
+#main .alternate_color a:visited,
+#main .alternate_color a:hover {
+    text-decoration: underline;
+}
+
+.avia-menu-fx {
+    height: 4px;
+}
+
+#top #header {
+    background-color: var(--white);
+}
+
+#top #header.header-scrolled {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#top #header .av-main-nav>li>a:hover {
+    background-color: var(--ghost-50);
+}
+
+#top #main strong {
+    color: inherit;
+}
+
+#top #main #footer {
+    padding: 30px 0;
+}
+
+#top #main #footer .widget {
+    margin: 0;
+}
+
+.av-milestone>* {
+    vertical-align: middle;
+}
+
+.av-milestone article .av-milestone-content p:first-child {
+    margin-top: 0;
+}
+
+/* START wpcf7 */
+#top #main .wpcf7-form {
+    margin-top: 16px;
+    border: 1px solid var(--ghost-200);
+    padding: 24px 32px;
+    background-color: var(--white);
+}
+
+#top #main .wpcf7-form input,
+#top #main .wpcf7-form textarea {
+    border: 1px solid var(--ghost-400);
+}
+
+#top #main .wpcf7-form input:focus-visible,
+#top #main .wpcf7-form textarea:focus-visible {
+    border-color: var(--maroon-700);
+    outline-color: var(--maroon-700);
+}
+
+#top #main .wpcf7-form .wpcf7-list-item {
+    display: block;
+    margin: 0;
+}
+
+#top #main .wpcf7-form label,
+#top #main .wpcf7-form legend {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#top #main .wpcf7-form label span,
+#top #main .wpcf7-form legend span {
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+#top #main .wpcf7-form .wpcf7-not-valid-tip {
+    color: var(--semantic-error);
+    margin-top: -15px;
+}
+
+#top #main .wpcf7-form .wpcf7-response-output {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#top #main .wpcf7-form.invalid .wpcf7-response-output {
+    border-color: var(--semantic-error);
+    background-color: var(--semantic-error-bg);
+    color: var(--semantic-error);
+}
+
+#top #main .wpcf7-form.sent .wpcf7-response-output {
+    border-color: var(--semantic-success);
+    background-color: var(--semantic-success-bg);
+    color: var(--semantic-success);
+}
+
+#top #main .wpcf7-form .wpcf7-submit {
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid var(--maroon-700);
+    outline-offset: 4px;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+/* END wpcf7 */
+
+/* START ticket-button */
+#top #main .ticket-button a {
+    text-decoration: none;
+    font-size: 1.625em;
+}
+
+/* END ticket-button */
+
+/* START timeline */
+#top #main .alternate_color .avia-timeline .av-milestone-date {
+    color: var(--ghost-300);
+}
+
+#top #main .alternate_color .avia-timeline .milestone_icon,
+#top #main .alternate_color .avia-icon-list .iconlist_icon {
+    background-color: var(--teal-desat-600);
+}
+
+#top #main .alternate_color .avia-timeline .milestone_inner {
+    background-color: transparent;
+}
+
+#top #main .alternate_color .avia-timeline .milestone-char,
+#top #main .alternate_color .avia-icon-list .iconlist-char {
+    color: var(--teal-800);
+}
+
+#top #main .alternate_color .av-milestone-icon-wrap:after {
+    border-color: var(--teal-desat-600);
+}
+
+#top #main .alternate_color .avia-timeline .av-milestone-date span {
+    background-color: var(--teal-desat-600);
+}
+
+/* END timeline */
+
+/* START accordion */
+#top #main .main_color .toggle_icon,
+#top #main .main_color .toggle_icon * {
+    border-color: var(--ghost-600);
+}
+
+/* END accordion */
+
+/* START section */
+#top #main .avia-section {
+    min-height: initial;
+}
+
+/* END section */
+
+/* START title bar */
+#top #main .title_container {
+    background-color: var(--studio-950);
+    border-color: var(--studio-950);
+    color: var(--ghost-50);
+}
+
+#top #main .title_container .main-title {
+    color: var(--ghost-50);
+    letter-spacing: 1px;
+}
+
+#top #main .title_container .main-title a {
+    color: var(--ghost-50);
+}
+
+#top #main .title_container .breadcrumb {
+    color: var(--ghost-50);
+}
+
+#top #main .title_container .breadcrumb a {
+    color: var(--ghost-50);
+}
+
+#top #main .banner_image+.title_container .container {
+    padding-top: 0;
+    min-height: initial;
+}
+
+#top #main .banner_image+.title_container h1 {
+    line-height: 1.25em;
+}
+
+/* END title bar */
