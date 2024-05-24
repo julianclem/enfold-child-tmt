@@ -20,7 +20,11 @@ Template: enfold
     --ghost-300: #dad6dc;
     --ghost-400: #cec8d0;
     --ghost-600: #988c9b;
+    --ghost-800: #706572;
+    --ghost-900: #5d545e;
 
+    --studio-500: #b65ed7;
+    --studio-700: #82319a;
     --studio-950: #390e44;
 
     --maroon-700: #8e0b6b;
@@ -56,10 +60,6 @@ Template: enfold
     text-decoration: underline;
 }
 
-.avia-menu-fx {
-    height: 4px;
-}
-
 #top #header {
     background-color: var(--white);
 }
@@ -70,6 +70,11 @@ Template: enfold
 
 #top #header .av-main-nav>li>a:hover {
     background-color: var(--ghost-50);
+}
+
+#top #header .avia-menu .avia-menu-fx {
+    height: 4px;
+    background-color: var(--studio-500);
 }
 
 #top #main strong {
@@ -91,6 +96,44 @@ Template: enfold
 .av-milestone article .av-milestone-content p:first-child {
     margin-top: 0;
 }
+
+/* START title bar */
+#top #main .title_container {
+    border-top: none;
+    background-color: var(--ghost-50);
+    color: var(--ghost-800);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    z-index: 2;
+}
+
+#top #main .title_container .container {
+    min-height: auto;
+}
+
+#top #main .title_container h1.main-title {
+    min-height: auto;
+    color: var(--ghost-900);
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration-line: underline;
+    text-decoration-color: var(--studio-500);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 14px;
+}
+
+#top #main .title_container .main-title a {
+    color: var(--ghost-900);
+}
+
+#top #main .title_container .breadcrumb {
+    color: var(--ghost-900);
+}
+
+#top #main .title_container .breadcrumb a {
+    color: var(--ghost-900);
+}
+
+/* END title bar */
 
 /* START wpcf7 */
 #top #main .wpcf7-form {
@@ -214,38 +257,3 @@ Template: enfold
 }
 
 /* END section */
-
-/* START title bar */
-#top #main .title_container {
-    background-color: var(--studio-950);
-    border-color: var(--studio-950);
-    color: var(--ghost-50);
-}
-
-#top #main .title_container .main-title {
-    color: var(--ghost-50);
-    letter-spacing: 1px;
-}
-
-#top #main .title_container .main-title a {
-    color: var(--ghost-50);
-}
-
-#top #main .title_container .breadcrumb {
-    color: var(--ghost-50);
-}
-
-#top #main .title_container .breadcrumb a {
-    color: var(--ghost-50);
-}
-
-#top #main .banner_image+.title_container .container {
-    padding-top: 0;
-    min-height: initial;
-}
-
-#top #main .banner_image+.title_container h1 {
-    line-height: 1.25em;
-}
-
-/* END title bar */

@@ -121,7 +121,7 @@ function banner_image()
   if (!$image)
     return;
 
-  echo '<div class="banner_image" style="background-image: url(\'' . $image . '\'); background-image: linear-gradient(rgba(0,0,0,0) 67%, var(--title-bar-bg)), url(\'' . $image . '\')"></div>';
+  echo '<div class="banner_image" style="background-image: url(\'' . $image . '\');"></div>';
 }
 // END banner image front end
 
@@ -191,7 +191,7 @@ function avia_title($args = false, $id = false)
   if (!empty($subtitle))
     $additions .= "<div class='title_meta meta-color'>" . wpautop($subtitle) . "</div>";
   if ($breadcrumb)
-    $additions .= avia_breadcrumbs(array('separator' => '/', 'richsnippet' => true));
+    $additions .= avia_breadcrumbs(array('separator' => '/', 'richsnippet' => true, 'before' => ''));
 
 
   if (!$title)
@@ -263,7 +263,7 @@ add_filter('avf_skin_options', function ($styles = " ") {
     'colorset-main_color-primary' => $maroon_700,
     'colorset-main_color-secondary' => $maroon_800,
     'colorset-main_color-color' => $ghost_950,
-    'colorset-main_color-border' => $ghost_200,
+    'colorset-main_color-border' => $ghost_50,
     'colorset-main_color-img' => '',
     'colorset-main_color-customimage' => '',
     'colorset-main_color-pos' => 'top center',
