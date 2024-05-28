@@ -191,7 +191,7 @@ function avia_title($args = false, $id = false)
   if (!empty($subtitle))
     $additions .= "<div class='title_meta meta-color'>" . wpautop($subtitle) . "</div>";
   if ($breadcrumb)
-    $additions .= avia_breadcrumbs(array('separator' => '/', 'richsnippet' => true, 'before' => ''));
+    $additions .= avia_breadcrumbs(array('separator' => '/', 'richsnippet' => true, 'before' => '', 'front_page' => false));
 
 
   if (!$title)

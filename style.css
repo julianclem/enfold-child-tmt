@@ -113,13 +113,17 @@ Template: enfold
     padding-bottom: 0;
 }
 
+#top #main .title_container .container:empty {
+    display: none;
+}
+
 #top #main .title_container h1.main-title {
     min-height: auto;
     color: var(--ghost-900);
     font-size: 16px;
     line-height: 1.5em;
     border-bottom: solid 2px var(--studio-500);
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 }
 
 #top #main .title_container .main-title a {
@@ -127,11 +131,28 @@ Template: enfold
 }
 
 #top #main .title_container .breadcrumb {
+    position: initial;
+    margin-top: 0;
     color: var(--ghost-900);
+    font-size: 16px;
+    line-height: 1.5em;
+    border-bottom: solid 2px var(--studio-500);
+    padding-bottom: 8px;
+}
+
+#top #main .title_container .breadcrumb .sep {
+    overflow: visible;
+    width: unset;
 }
 
 #top #main .title_container .breadcrumb a {
-    color: var(--ghost-900);
+    font-size: 14px;;
+    color: var(--studio-700);
+    font-weight: 400;
+}
+
+#top #main .title_container .breadcrumb .trail-end {
+    font-weight: 600;
 }
 
 /* END title bar */
