@@ -108,6 +108,9 @@ Template: enfold
 
 #top #main .title_container .container {
     min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
 }
 
 #top #main .title_container h1.main-title {
@@ -115,10 +118,8 @@ Template: enfold
     color: var(--ghost-900);
     font-size: 16px;
     line-height: 1.5em;
-    text-decoration-line: underline;
-    text-decoration-color: var(--studio-500);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 14px;
+    border-bottom: solid 2px var(--studio-500);
+    padding-bottom: 8px;
 }
 
 #top #main .title_container .main-title a {
