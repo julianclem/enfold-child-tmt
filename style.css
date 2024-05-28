@@ -100,7 +100,7 @@ Template: enfold
 /* START title bar */
 #top #main .title_container {
     border-top: none;
-    background-color: var(--ghost-50);
+    background-color: var(--white);
     color: var(--ghost-800);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     z-index: 2;
