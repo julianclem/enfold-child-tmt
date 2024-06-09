@@ -118,8 +118,8 @@ Template: enfold
     color: var(--ghost-900);
     font-size: 16px;
     line-height: 1.5em;
-    border-bottom: solid 2px var(--studio-500);
-    padding-bottom: 8px;
+    border-bottom: solid 4px var(--studio-500);
+    padding: 0 13px 8px;
 }
 
 #top #main .title_container .main-title a {
