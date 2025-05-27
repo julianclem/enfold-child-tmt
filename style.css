@@ -258,3 +258,33 @@ Template: enfold
 }
 
 /* END section */
+
+/* START columns */
+#top #main .av_one_fifth {
+    margin-left: 3%;
+    width: 17.6%;
+}
+
+#top #main .av_two_fifth {
+    margin-left: 3%;
+    width: 35.2%;
+}
+
+#top #main .av_three_fifth {
+    margin-left: 3%;
+    width: 52.8%;
+}
+
+#top #main .av_four_fifth {
+    margin-left: 3%;
+    width: 70.4%;
+}
+
+#top #main .av_one_fifth.first,
+#top #main .av_two_fifth.first,
+#top #main .av_three_fifth.first,
+#top #main .av_four_fifth.first {
+    margin-left: 0;
+}
+
+/* END columns */
