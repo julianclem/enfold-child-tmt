@@ -210,6 +210,9 @@ Template: enfold
 /* START ticket-button */
 #top #main .ticket-button a {
     text-decoration: none;
+}
+
+#top #main .ticket-button a.avia-size-x-large {
     font-size: 1.625em;
 }
 
