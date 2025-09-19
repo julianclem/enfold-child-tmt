@@ -40,8 +40,48 @@ Template: enfold
 
     --tiktok-pink: rgb(254, 44, 85);
 
+    --focus-yellow: #ffffaa;
+
     /* mappings */
     --title-bar-bg: var(--studio-950);
+}
+
+#top #header *:focus-visible {
+    box-shadow: 0 0 0 3px inset var(--studio-500);
+}
+
+#top #header *:focus-visible img {
+    outline-style: solid;
+    outline-offset: -3px;
+    outline-width: 3px;
+    outline-color: var(--studio-500);
+}
+
+#top #header *[data-av_icon]:focus-visible {
+    box-shadow: 0 0 0 6px inset var(--focus-yellow);
+    outline-style: solid;
+    outline-offset: -3px;
+    outline-width: 3px;
+    outline-color: var(--studio-500);
+}
+
+#top #main *:focus-visible {
+    box-shadow: 0 0 0 3px var(--focus-yellow);
+    outline-style: solid;
+    outline-offset: 3px;
+    outline-width: 3px;
+    outline-color: var(--studio-700);
+}
+
+#top #main #footer *:focus-visible {
+    box-shadow: 0 0 0 3px inset var(--focus-yellow);
+    outline-style: none;
+}
+
+#top #main footer *[data-av_icon]:focus-visible {
+    outline-offset: -3px;
+    outline-width: 3px;
+    outline-color: var(--focus-yellow);
 }
 
 #top #wrap_all .av-social-link-tiktok:hover a {
