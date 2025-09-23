@@ -331,3 +331,10 @@ Template: enfold
 }
 
 /* END columns */
+
+/* START media player */
+#top #main .mejs-container {
+    margin-top: 8px;
+}
+
+/* END media player */
