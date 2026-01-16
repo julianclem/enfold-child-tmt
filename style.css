@@ -337,4 +337,20 @@ Template: enfold
     margin-top: 8px;
 }
 
+#top #main .wp-playlist .wp-playlist-item-title,
+#top #main .wp-playlist .wp-playlist-item-album,
+#top #main .wp-playlist .wp-playlist-item,
+#top #main .wp-playlist .wp-playlist-item-length {
+    font-size: 16px;
+}
+
+#top #main .wp-playlist .wp-playlist-item {
+    padding: 6px 3px;
+    border-bottom-width: 0;
+}
+
 /* END media player */
+
+/* START av player */
+
+/* END av player */
